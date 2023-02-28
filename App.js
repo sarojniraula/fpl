@@ -1,20 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { useFonts } from 'expo-font';
+import { ActivityIndicator } from 'react-native';
+import Navigation from './Navigation';
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    'Cursive': require('./assets/cursive.ttf')
+  })
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    fontsLoaded?
+    <NavigationContainer>
+      <Navigation />
+    </NavigationContainer>
+    : <ActivityIndicator />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
