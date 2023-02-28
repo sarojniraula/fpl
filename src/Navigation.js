@@ -1,4 +1,3 @@
-import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Individual from "./Screens/Individual";
 import Landing from "./Screens/Landing";
@@ -15,9 +14,3 @@ export default Navigation = () => {
         </Stack.Navigator>
     )
 }
-
-/* export default Navigation = () => {
-    <NavigationContainer>
-        <MyStack />
-    </NavigationContainer>
-} */

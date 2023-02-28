@@ -1,7 +1,9 @@
-import { TouchableOpacity, View, Image, Text, ScrollView } from "react-native"
+import { useState } from "react"
+import { TouchableOpacity, View, Image, Text, ScrollView, TextInput } from "react-native"
 import Icon from 'react-native-vector-icons/Entypo'
 
 export default Members = ({navigation}) => {
+    const [text, setText] = useState(null);
     return (
         <ScrollView style={{paddingTop: 50, flex: 1, backgroundColor: 'orange'}}>
             <TouchableOpacity style={{flexDirection: "row", marginLeft: 15}} onPress={()=>navigation.pop()}>
@@ -9,7 +11,14 @@ export default Members = ({navigation}) => {
                 <Text style={{fontSize: 20}}>Back</Text>
             </TouchableOpacity>
         <View style={{paddingTop: 50}}>
-            <View style={{flexDirection:'row', paddingVertical: 50}}>
+            <Text style={{marginLeft: 90, fontSize: 20, fontWeight: 'bold', color: '#19375f'}}>Search using fpl id</Text>
+            <TextInput 
+                style={{marginLeft: 70, paddingLeft:15, backgroundColor:'red', width: 200, height: 40}}
+                keyboardType='numeric'
+                onChangeText={(text)=>setText(text)}
+                onSubmitEditing={()=>(navigation.navigate('Individual', {id: text}))}
+            />
+            <View style={{flexDirection:'row', paddingVertical: 20}}>
                 <TouchableOpacity style={{paddingHorizontal: 20}} onPress={()=>(navigation.navigate('Individual', {id: 290467}))}>
                     <Image style={{width: 80, height: 80}} source={require('../../assets/Individuals/saroj.jpg')} />
                 </TouchableOpacity>

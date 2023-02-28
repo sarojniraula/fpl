@@ -2,6 +2,7 @@
   "expo": {
     "name": "fpl",
     "slug": "fpl",
+    "owner": "saroj.niraula",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
