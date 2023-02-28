@@ -11,35 +11,35 @@ export default Members = ({navigation}) => {
         <View style={{paddingTop: 50}}>
             <View style={{flexDirection:'row', paddingVertical: 50}}>
                 <TouchableOpacity style={{paddingHorizontal: 20}} onPress={()=>(navigation.navigate('Individual', {id: 290467}))}>
-                    <Image style={{width: 80, height: 80}} source={require('../assets/Individuals/saroj.jpg')} />
+                    <Image style={{width: 80, height: 80}} source={require('../../assets/Individuals/saroj.jpg')} />
                 </TouchableOpacity>
                 <TouchableOpacity style={{paddingHorizontal: 20}} onPress={()=>(navigation.navigate('Individual', {id: 6433}))}>
-                    <Image style={{width: 80, height: 80}} source={require('../assets/Individuals/anzan.jpg')} />
+                    <Image style={{width: 80, height: 80}} source={require('../../assets/Individuals/anzan.jpg')} />
                 </TouchableOpacity>
                 <TouchableOpacity style={{paddingHorizontal: 20}} onPress={()=>(navigation.navigate('Individual', {id: 14984}))}>
-                    <Image style={{width: 80, height: 80}} source={require('../assets/Individuals/gaurab.jpg')} />
+                    <Image style={{width: 80, height: 80}} source={require('../../assets/Individuals/gaurab.jpg')} />
                 </TouchableOpacity>
             </View>
             <View style={{flexDirection:'row', paddingVertical: 50}}>
                 <TouchableOpacity style={{paddingHorizontal: 20}} onPress={()=>(navigation.navigate('Individual', {id: 692853}))}>
-                    <Image style={{width: 80, height: 80}} source={require('../assets/Individuals/bidish.jpg')} />
+                    <Image style={{width: 80, height: 80}} source={require('../../assets/Individuals/bidish.jpg')} />
                 </TouchableOpacity>
                 <TouchableOpacity style={{paddingHorizontal: 20}} onPress={()=>(navigation.navigate('Individual', {id: 41341}))}>
-                    <Image style={{width: 80, height: 80}} source={require('../assets/Individuals/gaurav.jpg')} />
+                    <Image style={{width: 80, height: 80}} source={require('../../assets/Individuals/gaurav.jpg')} />
                 </TouchableOpacity>
                 <TouchableOpacity style={{paddingHorizontal: 20}} onPress={()=>(navigation.navigate('Individual', {id: 17738}))}>
-                    <Image style={{width: 80, height: 80}} source={require('../assets/Individuals/himal.jpg')} />
+                    <Image style={{width: 80, height: 80}} source={require('../../assets/Individuals/himal.jpg')} />
                 </TouchableOpacity>
             </View>
             <View style={{flexDirection:'row', paddingVertical: 50}}>
                 <TouchableOpacity style={{paddingHorizontal: 20}} onPress={()=>(navigation.navigate('Individual', {id: 14787}))}>
-                    <Image style={{width: 80, height: 80}} source={require('../assets/Individuals/pravin.jpg')} />
+                    <Image style={{width: 80, height: 80}} source={require('../../assets/Individuals/pravin.jpg')} />
                 </TouchableOpacity>
                 <TouchableOpacity style={{paddingHorizontal: 20}} onPress={()=>(navigation.navigate('Individual', {id: 6283}))}>
-                    <Image style={{width: 80, height: 80}} source={require('../assets/Individuals/sujan.jpg')} />
+                    <Image style={{width: 80, height: 80}} source={require('../../assets/Individuals/sujan.jpg')} />
                 </TouchableOpacity>
                 <TouchableOpacity style={{paddingHorizontal: 20}} onPress={()=>(navigation.navigate('Individual', {id: 21460}))}>
-                    <Image style={{width: 80, height: 80}} source={require('../assets/Individuals/govinda.jpg')} />
+                    <Image style={{width: 80, height: 80}} source={require('../../assets/Individuals/govinda.jpg')} />
                 </TouchableOpacity>
             </View>
         </View>
